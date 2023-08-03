@@ -1,0 +1,90 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.frutas{
+    margin: 50px;
+    color: rgb(193, 110, 15);
+    border: solid rgb(89, 89, 89) 3px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(./img/Fruit_Grapes_Orange_fruit_Black_background_521290_1280x800.jpg);
+    opacity: 0.9;
+    background-size: cover;
+}
+.clasificaciones{
+    margin: 50px;
+    color: rgb(255, 255, 255);
+    border: solid rgb(89, 89, 89) 3px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./img/istockphoto-492452398-170667a.webp);
+    opacity: 0.9;
+    background-size: cover;
+}
+
+.texto{
+    background-color: rgb(110, 75, 69);
+    width: 50%;
+}
+
+.frutasVerduras{
+    color: rgb(255, 255, 255);
+    margin: 50px;
+    border: solid rgb(89, 89, 89) 3px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/greens-vegetables-background-fruit-hd-wallpaper-preview.jpg);
+    opacity: 0.9;
+    background-size: cover;
+}
+
+.textoFrutas{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    display: table-column;
+}
+
+
+
+.frutasDos{
+    margin: 50px;
+    color: rgb(193, 110, 15);
+    border: solid rgb(89, 89, 89) 3px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./img/Fruit_Grapes_Orange_fruit_Black_background_521290_1280x800.jpg);
+    opacity: 0.9;
+    background-size: cover;
+}
+
+.calculo{
+    margin: 50px;
+    color: rgb(0, 0, 0);
+    border: solid rgb(89, 89, 89) 3px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/textura-papel-cuadrado-pagina-cuaderno-jaula_159025-44.avif);
+    background-size: cover;
+}

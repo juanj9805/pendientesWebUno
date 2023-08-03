@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.triangulo{
+    margin: 50px;
+    color: rgb(0, 0, 0);
+    border: solid rgb(89, 89, 89) 3px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./img/textura-papel-cuadrado-pagina-cuaderno-jaula_159025-44.avif);
+    background-size: cover;
+}
+.velocidad{
+    margin: 50px;
+    color: rgb(220, 6, 7);
+    border: solid rgb(89, 89, 89) 3px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/thumbnail-3d.webp);
+    background-size: cover;
+}
+.temperatura{
+    margin: 50px;
+    color: rgb(0, 0, 0);
+    border: solid rgb(89, 89, 89) 3px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/desktop-wallpaper-best-5-thermometer-on-hip-thermometer.jpg);
+    background-size: cover;
+}
+.imc{
+    margin: 50px;
+    color: rgb(0, 0, 0);
+    border: solid rgb(89, 89, 89) 3px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/Como-calcular-el-IMC-con-calculadora-de-forma-manual-940x580.jpg);
+    background-size: cover;
+}
+.dias{
+    margin: 50px;
+    color: rgb(255, 255, 255);
+    border: solid rgb(89, 89, 89) 3px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./img/calendario-marzo-2023-sobre-fondo-negro_775074-432.avif);
+    background-size: cover;
+}

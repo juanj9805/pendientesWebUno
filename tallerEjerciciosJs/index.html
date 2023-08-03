@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+
+		<div class="triangulo">
+			<br />
+			<h2>Superficie Triangulo</h2>
+
+			<div class="punto__uno__ancho">
+				<label for="">Escribe aqui el ancho</label>
+				<input
+					id="id__input__ancho"
+					type="text"
+					placeholder="Escriba aqui"
+				
+			</div>
+			</div>
+
+			<br />
+			<div class="punto__uno__ancho">
+				<label for="">Escribe aqui el alto</label>
+				<input
+					id="id__input__alto"
+					type="text"
+					placeholder="Escriba aqui"
+				/>
+			</div>
+
+			<br />
+			<button onclick="area()" class="btn btn-primary">
+				Calcular superficie
+			</button>
+
+			<br />
+			<h1 id="id__input__response" class="punto__uno__response"></h1>
+			<br />
+		</div>
+
+		<div class="velocidad">
+			<br />
+			<h2>velocidad</h2>
+
+			<div class="punto__uno__ancho">
+				<label for="">Escriba su velocidad en Km/hora</label>
+				<input
+					id="id__input__velocidad_km"
+					type="text"
+					placeholder="Escriba aqui"
+				/>
+			</div>
+
+			<br />
+			<button onclick="velocidad()" class="btn btn-primary">
+				Calcular Velocidad
+			</button>
+			<br />
+
+			<div class="">
+				<label for="">Su velocidad en metros / hora es: </label>
+				<p
+					id="id__puntoDos__input__response1"
+					class="punto__uno__response"
+				></p>
+			</div>
+			<br />
+
+			<div class="">
+				<label for="">Su velocidad en millas / hora es: </label>
+				<p
+					id="id__puntoDos__input__response2"
+					class="punto__uno__response"
+				></p>
+			</div>
+			<br />
+		</div>
+
+		<div class="temperatura">
+			<br />
+			<h2>Cambio de temperatura Celcius a Farengeith</h2>
+			<br />
+
+			<div class="punto__uno__ancho">
+				<label for="inputOriginal"
+					>Escriba la temperatura en grados Celcius:</label
+				>
+				<input
+					type="text"
+					id="inputOriginal"
+					placeholder="Escriba aquí"
+				/>
+			</div>
+
+			<br />
+			<div class="temperatura">
+				<label for="inputReflejo"
+					>Escriba la temperatura en grados Farengeith:</label
+				>
+				<input
+					type="text"
+					id="inputReflejo"
+					placeholder="El texto se reflejará aquí"
+				/>
+			</div>
+
+			<br />
+
+			<br />
+			<h1
+				id="id__puntoTres__input__response"
+				class="punto__uno__response"
+			></h1>
+			<br />
+		</div>
+
+		<div class="imc">
+			<br />
+			<br />
+            <br />
+			<br />		<br />
+			<br />		<br />
+	
+			<div class="punto__uno__ancho">
+				<label for="">Escribe aqui tu estatura en metros</label>
+				<input
+					id="id__input__estatura"
+					type="text"
+					placeholder="Escriba aqui"
+				/>
+			</div>
+
+			<br />
+			<div class="punto__uno__ancho">
+				<label for="">Escribe aqui tu peso en Kg</label>
+				<input
+					id="id__input__peso"
+					type="text"
+					placeholder="Escriba aqui"
+				/>
+			</div>
+
+			<br />
+			<button onclick="indiceMasaCorporal()" class="btn btn-primary">
+				Calcular IMC
+			</button>
+
+			<br />
+			<h1
+				id="id__puntoCuatro__input__response"
+				class="punto__uno__response"
+			></h1>
+			<br />
+		</div>
+
+		<div class="dias">
+			<br />
+			<h2>Calculadora de días y semanas hasta fin de año</h2>
+			<br />
+
+			<div class="punto__uno__ancho">
+				<label for="fechaInput">Fecha actual:</label>
+				<input type="date" id="fechaInput" required />
+			</div>
+
+			<br />
+			<button
+				class="btn btn-primary"
+				onclick="calcularDiasYSemanasHastaFinDeAnio()"
+			>
+				Calcular
+			</button>
+
+			<br />
+			<h1 id="id__input__response" class="punto__uno__response"></h1>
+			<p id="resultado" class="punto__uno__response"></p>
+			<br />
+		</div>
+        <script src="app.js" ></script>
+	</body>
+</html>

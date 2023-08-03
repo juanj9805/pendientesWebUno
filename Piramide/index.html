@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 13px rgb(20, 20, 104) dotted;
+            width: 80%;
+            margin-top: 120px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="box">
+        <h1>Primer Punto</h1>
+        <div class="linea">
+            <p>Este es el primer numero aleatorio: </p>
+            <span id="id_n1" ></span>
+        </div>
+        <div class="linea">
+            <p>Este es el segundo numero aleatorio: </p>
+            <span id="id_n2" ></span>
+        </div>
+        <div class="linea">
+            <p>Este es el tercer numero aleatorio: </p>
+            <span id="id_n3" ></span>
+        </div>
+
+
+    </div>
+
+    <div class="box">
+        <h1>Segundo Punto</h1>
+
+        <p>Estos son los numeros del 1 al 30</p>
+        <span id="id_numeros" ></span>
+
+        <div class="linea">
+            <p>Los numeros multiplos de 4 son: </p>
+            <span id="id_numeros_multiplos4" ></span>
+        </div>
+
+        <div class="linea">
+            <p>Los numeros multiplos de 5 son: </p>
+            <span id="id_numeros_multiplos5" ></span>
+        </div>
+
+        <div class="linea">
+            <p>Los numeros multiplos de 9 son: </p>
+            <span id="id_numeros_multiplos9" ></span>
+        </div>
+
+    </div>
+    
+    <div class="box">
+        <h1>Tercer punto</h1>
+
+        <span id="id_piramide" ></span>
+    </div>
+
+
+    <script >
+        //PRIMER PUNTO
+
+var numeroAdivinar1, numeroAdivinar2, numeroAdivinar3;
+
+do {
+  numeroAdivinar1 = Math.floor(Math.random() * 99) + 1;
+  numeroAdivinar2 = Math.floor(Math.random() * 99) + 1;
+  numeroAdivinar3 = Math.floor(Math.random() * 99) + 1;
+} while (numeroAdivinar1 === numeroAdivinar2 || numeroAdivinar1 === numeroAdivinar3 || numeroAdivinar2 === numeroAdivinar3);
+
+var n1 = document.getElementById("id_n1").innerHTML = numeroAdivinar1;
+var n2 = document.getElementById("id_n2").innerHTML = numeroAdivinar2;
+var n3 = document.getElementById("id_n3").innerHTML = numeroAdivinar3;
+
+
+//SEGUNDO PUNTO
+
+var arrayNumeros = [];
+var arrayNumerosMultiplos4 = [];
+var arrayNumerosMultiplos5 = [];
+var arrayNumerosMultiplos9 = [];
+
+for (let i = 1; i <= 30; i++) {
+
+  arrayNumeros.push(i);
+}
+//ejempplo
+
+
+arrayNumeros.forEach(function( index) {
+    
+
+    //multiplos de 4
+    if(index % 4 ==0){
+        arrayNumerosMultiplos4.push(index);
+    }
+
+    //multiplos de 5
+    if(index % 5 ==0){
+        arrayNumerosMultiplos5.push(index);
+    }
+
+    //multiplos de 4
+    if(index % 9 ==0){
+        arrayNumerosMultiplos9.push(index);
+    }
+
+    
+  });
+
+var numeros = document.getElementById("id_numeros").innerHTML= arrayNumeros;
+console.log(arrayNumerosMultiplos4);
+console.log(arrayNumerosMultiplos5);
+console.log(arrayNumerosMultiplos9);
+
+
+var multi4 = document.getElementById("id_numeros_multiplos4").innerHTML = arrayNumerosMultiplos4;
+var multi5 = document.getElementById("id_numeros_multiplos5").innerHTML = arrayNumerosMultiplos5;
+var multi9 = document.getElementById("id_numeros_multiplos9").innerHTML = arrayNumerosMultiplos9;
+
+//TERCER PUNTO
+
+
+var variable = "";
+
+for(let i = 1; i<31;i++){
+
+    variable += `${i}`.repeat(i) + '\n'+`<br>`;
+    
+}
+
+
+var piramide = document.getElementById("id_piramide").innerHTML=variable;
+
+    </script>
+
+</body>
+</html>
